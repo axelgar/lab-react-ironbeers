@@ -14,7 +14,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home}></Route>
             <Route exact path='/beers' component={BeerList}></Route>
-            <Route exact path='/beers/:id' render={(props) => <Beer {...props}/>}></Route>
+            <Route exact path='/beers/:id' component={Beer}></Route>
             <Route exact path='/random-beer' component={Beer}></Route>
             <Route exact path='/new-beer' component={CreateBeer}></Route>
           </Switch>
